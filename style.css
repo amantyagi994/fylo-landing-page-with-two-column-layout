@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+
+:root {
+  --veryDarkBlue: #070439;
+  --desaturatedBlue: #585989;
+  --brightBlue: #3065f8;
+  --moderateCyan: #3c9f8f;
+  --lightGrayishBlue: #f6f6fe;
+  --lightGray: #bfbfbf;
+  --Raleway: "Raleway", sans-serif;
+  --OpenSans: "Open Sans", sans-serif;
+}
+
+html,
+body {
+  font-family: var(--OpenSans);
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.heading {
+  font-family: var(--Raleway);
+}
+
+.br5P {
+  border-radius: 5px;
+}
+
+.wd100 {
+  width: 100%;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoContainer {
+  padding: 1.5rem;
+  /* background-color: cornflowerblue; */
+}
+
+.logo {
+  height: 2rem;
+}
+
+.navLinks {
+  /* height: 3rem; */
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  /* background-color: coral; */
+}
+
+.navLink {
+  padding: 0 0.3rem;
+  color: #6e6e6e;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+.image {
+  width: 80%;
+  max-width: 30rem;
+}
+
+.introText {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 1rem;
+}
+
+.introText .heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 1.5rem 0 1rem;
+}
+
+.introText .para {
+  padding: 1rem;
+  color: #6e6e6e;
+}
+
+.searchContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.inputBox {
+  width: 90%;
+  max-width: 30rem;
+  border: 2px solid var(--lightGray);
+  padding: 1rem 2rem;
+  color: var(--desaturatedBlue);
+  margin: 0 0 0.5rem;
+}
+
+.btn {
+  width: 90%;
+  max-width: 25rem;
+  padding: 1rem;
+  margin: 0.5rem 0 0;
+}
+
+.btnBlue {
+  color: white;
+  background-color: var(--brightBlue);
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5rem;
+  background-color: var(--lightGrayishBlue);
+  padding-bottom: 6rem;
+}
+
+.features .heading {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.illustration2 {
+  padding: 5rem 0;
+}
+
+.textGrey {
+  color: #6e6e6e;
+}
+
+.features .textGrey {
+  padding: 1rem;
+  text-align: left;
+  font-size: 1.05rem;
+}
+
+.a0b0c0 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--moderateCyan);
+  height: 4rem;
+  font-family: var(--Raleway);
+}
+
+.a0b0c0 .link {
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--moderateCyan);
+  display: flex;
+  align-items: center;
+}
+
+.link span {
+  padding: 0.5rem 0 0 0.5rem;
+}
+
+.card {
+  width: 80%;
+  box-shadow: 0 0 10px 0 #0000001e;
+}
+
+.testimonial {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding: 1.5rem 0.5rem 1.5rem 1.5rem;
+  background-color: white;
+}
+
+.quotes {
+  height: 1rem;
+}
+
+.testimonialText {
+  padding: 1rem 0;
+  line-height: 1.3rem;
+  font-size: 14px;
+}
+
+.writer {
+  display: flex;
+}
+
+.avatarTestimonial {
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.writerTestimonial {
+  padding: 0 0.5rem;
+  font-weight: bold;
+}
+
+.designation {
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.earlyAccessTextDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--desaturatedBlue);
+  color: white;
+  padding: 2rem;
+}
+
+.earlyAccessTextDiv .heading {
+  font-size: 1.4rem;
+  padding: 1rem 0;
+}
+
+.textEarlyAccess {
+  font-weight: lighter;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  color: var(--lightGray);
+}
+
+.earlyAccessSignupDiv {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerDiv {
+  background-color: var(--veryDarkBlue);
+}
+
+.logoFooter {
+  width: 100%;
+}
