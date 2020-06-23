@@ -27,6 +27,7 @@ body {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 .heading {
@@ -39,6 +40,14 @@ a {
 
 .wd100 {
   width: 100%;
+}
+
+.flx {
+  display: flex;
+}
+
+.flxColumn {
+  flex-direction: column;
 }
 
 .navBar {
@@ -259,8 +268,61 @@ a {
 
 .footerDiv {
   background-color: var(--veryDarkBlue);
+  color: white;
+  padding: 2rem;
+  flex-direction: column;
 }
 
 .logoFooter {
   width: 100%;
+  padding: 1rem 0;
+}
+
+.contactMail,
+.contactPhone {
+  padding: 0.5rem 0;
+}
+
+.iconMail,
+.iconTel,
+.phone,
+.mail {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.phone,
+.mail {
+  padding: 0 1.5rem;
+}
+
+.links {
+  flex-direction: column;
+}
+
+.aboutAndBlog,
+.termsAndPrivacy {
+  padding: 2rem 0 1.5rem;
+}
+
+.link {
+  padding: 0.5rem 0;
+}
+
+.socialConnect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialLink {
+  margin: 0 0.5rem;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 50%;
 }
