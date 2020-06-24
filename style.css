@@ -28,6 +28,11 @@ body {
 a {
   text-decoration: none;
   color: white;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
 }
 
 .heading {
@@ -66,16 +71,29 @@ a {
 }
 
 .navLinks {
-  /* height: 3rem; */
   padding: 1.5rem;
   display: flex;
   align-items: center;
-  /* background-color: coral; */
 }
 
 .navLink {
   padding: 0 0.3rem;
   color: #6e6e6e;
+}
+
+@media screen and (min-width: 1080px) {
+  .navBar {
+    padding: 1rem 3rem;
+  }
+
+  .logo {
+    height: 3rem;
+  }
+
+  .navLink {
+    font-size: 1.2rem;
+    padding-left: 1rem;
+  }
 }
 
 .intro {
@@ -94,13 +112,13 @@ a {
 
 .image {
   width: 80%;
-  max-width: 30rem;
+  max-width: 35rem;
 }
 
 .introText {
   width: 100%;
   text-align: center;
-  padding: 1rem 1rem;
+  padding: 1rem;
 }
 
 .introText .heading {
@@ -137,9 +155,60 @@ a {
   margin: 0.5rem 0 0;
 }
 
+@media screen and (min-width: 1080px) {
+  .intro {
+    flex-direction: row-reverse;
+    padding: 1rem;
+  }
+
+  .imageContainer {
+    width: 50%;
+    padding: 0;
+  }
+
+  .introText {
+    width: 50%;
+    padding-left: 3.5rem;
+    text-align: left;
+  }
+
+  .introText .heading {
+    font-size: 2.3rem;
+  }
+
+  .introText .para {
+    padding: 1rem 0 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  .searchContainer {
+    flex-direction: row;
+    padding: 0 5rem 0 0;
+  }
+
+  .inputBox,
+  .btn {
+    margin: 0 1rem 0 0;
+    padding: 0.8rem;
+  }
+
+  .btn {
+    width: 20rem;
+  }
+}
+
 .btnBlue {
   color: white;
   background-color: var(--brightBlue);
+  border: 2px solid var(--brightBlue);
+}
+
+.curve {
+  margin-top: 5rem;
+  height: 6rem;
+  background: url("images/bg-curve-mobile.svg") no-repeat;
+  background-size: 100%;
 }
 
 .features {
@@ -148,14 +217,14 @@ a {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 5rem;
-  background-color: var(--lightGrayishBlue);
+  background-color: #f8f8fe;
   padding-bottom: 6rem;
 }
 
 .features .heading {
   font-size: 1.3rem;
   font-weight: 700;
+  color: var(--veryDarkBlue);
 }
 
 .illustration2 {
@@ -188,20 +257,59 @@ a {
   align-items: center;
 }
 
+.link a {
+  color: var(--moderateCyan);
+}
+
 .link span {
   padding: 0.5rem 0 0 0.5rem;
 }
 
+@media screen and (min-width: 1080px) {
+  .curve {
+    background: url("images/bg-curve-desktop.svg") no-repeat;
+  }
+  .features {
+    flex-direction: row-reverse;
+    padding: 1rem;
+  }
+  .featureTexContainer {
+    width: 50%;
+    padding-left: 3.5rem;
+  }
+
+  .features .heading {
+    font-size: 2.3rem;
+    font-weight: bold;
+    text-align: left;
+    padding: 1rem 0;
+  }
+
+  .features .textGrey {
+    padding-left: 0;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .a0b0c0 {
+    width: 50%;
+    justify-content: flex-start;
+    font-weight: bold;
+  }
+}
+
 .card {
   width: 80%;
+  max-width: 30rem;
   box-shadow: 0 0 10px 0 #0000001e;
+  color: var(--desaturatedBlue);
 }
 
 .testimonial {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   text-align: left;
   padding: 1.5rem 0.5rem 1.5rem 1.5rem;
   background-color: white;
@@ -235,14 +343,34 @@ a {
   display: block;
   font-size: 12px;
   font-weight: normal;
+  color: var(--desaturatedBlue);
 }
 
+@media screen and (min-width: 1080px) {
+  .card {
+    width: 20rem;
+  }
+  .testimonial {
+    padding: 1.5rem;
+  }
+  .testimonialText {
+    padding: 0.8rem 0;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  .writer {
+    color: var(--veryDarkBlue);
+  }
+}
+
+.earlyAccess {
+  background-color: var(--desaturatedBlue);
+}
 .earlyAccessTextDiv {
   width: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: var(--desaturatedBlue);
   color: white;
   padding: 2rem;
 }
@@ -250,6 +378,13 @@ a {
 .earlyAccessTextDiv .heading {
   font-size: 1.4rem;
   padding: 1rem 0;
+}
+
+@media screen and (min-width: 1080px) {
+  .earlyAccess {
+    margin-top: 4rem;
+    display: flex;
+  }
 }
 
 .textEarlyAccess {
