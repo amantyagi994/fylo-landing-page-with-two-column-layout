@@ -206,7 +206,7 @@ button {
 
 .curve {
   margin-top: 5rem;
-  height: 6rem;
+  height: 3rem;
   background: url("images/bg-curve-mobile.svg") no-repeat;
   background-size: 100%;
 }
@@ -219,6 +219,13 @@ button {
   text-align: center;
   background-color: #f8f8fe;
   padding-bottom: 6rem;
+}
+
+.featureTexContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .features .heading {
@@ -267,15 +274,18 @@ button {
 
 @media screen and (min-width: 1080px) {
   .curve {
+    height: 6rem;
     background: url("images/bg-curve-desktop.svg") no-repeat;
   }
   .features {
     flex-direction: row-reverse;
-    padding: 1rem;
+    padding: 1rem 1rem 5rem;
   }
+
   .featureTexContainer {
     width: 50%;
     padding-left: 3.5rem;
+    align-items: flex-start;
   }
 
   .features .heading {
@@ -307,9 +317,6 @@ button {
 
 .testimonial {
   margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: left;
   padding: 1.5rem 0.5rem 1.5rem 1.5rem;
   background-color: white;
@@ -365,7 +372,9 @@ button {
 
 .earlyAccess {
   background-color: var(--desaturatedBlue);
+  padding: 0 0 5rem;
 }
+
 .earlyAccessTextDiv {
   width: 100%;
   display: flex;
@@ -380,13 +389,6 @@ button {
   padding: 1rem 0;
 }
 
-@media screen and (min-width: 1080px) {
-  .earlyAccess {
-    margin-top: 4rem;
-    display: flex;
-  }
-}
-
 .textEarlyAccess {
   font-weight: lighter;
   padding: 0.5rem;
@@ -399,6 +401,45 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (min-width: 1080px) {
+  .earlyAccess {
+    display: flex;
+    padding: 5rem 1rem;
+  }
+
+  .earlyAccessTextDiv,
+  .earlyAccessSignupDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    width: 50%;
+  }
+
+  .earlyAccessTextDiv {
+    padding: 0 3.5rem;
+  }
+
+  .earlyAccessTextDiv .heading {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  .textEarlyAccess {
+    padding: 0;
+  }
+
+  .earlyAccessSignupDiv {
+    padding: 0 5rem;
+  }
+
+  .earlyAccessSignupDiv .btn {
+    margin-top: 1rem;
+    max-width: 12rem;
+  }
 }
 
 .footerDiv {
@@ -460,4 +501,30 @@ button {
   justify-content: center;
   border: 1px solid white;
   border-radius: 50%;
+}
+
+@media screen and (min-width: 1080px) {
+  .footerDiv {
+    padding: 4.5rem 10rem 4.5rem 4.5rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .links {
+    padding-top: 5rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .aboutAndBlog,
+  .termsAndPrivacy {
+    padding: 1rem 5rem;
+  }
+}
+
+.attribution {
+  border-top: 3px solid var(--brightBlue);
+  padding: 1rem;
+  color: var(--brightBlue);
+  background-color: var(--veryDarkBlue);
+  text-align: center;
 }
